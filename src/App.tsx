@@ -1,21 +1,20 @@
-import { useState } from 'react'
 import './App.css'
 import { Button, FluentProvider, Title1 } from '@fluentui/react-components'
-import { lightTheme, darkTheme } from './utils/themes'
+import QuizGame from './QuizGame'
+import useDarkMode from './store/useDarkMode'
+import { getTheme } from './utils/themes'
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false)
 
-  const changeDarkMode = () => {
-    setDarkMode(!darkMode)
-  }
+  const darkMode = useDarkMode((state)=>state.darkMode)
+  const changeDarkMode = useDarkMode((state)=>state.changeDarkMode)
 
-  const mainTheme = darkMode ? darkTheme : lightTheme
+  const theme = getTheme(darkMode)
 
   return (
-    <FluentProvider theme={mainTheme}>
+    <FluentProvider theme={theme}>
       <div id='main-container'>
-        <nav style={{boxShadow: mainTheme.shadow2}}>
+        <nav style={{boxShadow: theme.shadow2}}>
           <div></div>
           <Title1>Quiz App</Title1>
           <Button
@@ -24,7 +23,7 @@ function App() {
             icon={<>{darkMode?' 🌞 ':' 🌝 '}</>}
           ></Button>
         </nav>
-        <div></div>
+        <QuizGame/>
       </div>
     </FluentProvider>
   )
