@@ -35,4 +35,4 @@ const darkTheme: Theme = {
 darkTheme.colorBrandForeground1 = myNewTheme[110]
 darkTheme.colorBrandForeground2 = myNewTheme[120]
 
-export {lightTheme, darkTheme};
+export const getTheme = (darkMode: boolean) => darkMode?darkTheme:lightTheme
