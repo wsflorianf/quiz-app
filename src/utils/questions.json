@@ -1,62 +1,102 @@
 [
     {
         "question": "¿Cuál es la capital de Francia?",
-        "answers": ["Madrid", "París", "Roma", "Berlín"],
-        "correct": 1,
-        "selected": "undefined"
+        "answers": [
+            "Madrid",
+            "París",
+            "Roma",
+            "Berlín"
+        ],
+        "correct": 1
     },
     {
         "question": "¿Cuál es el elemento químico con el símbolo 'O'?",
-        "answers": ["Oxígeno", "Oro", "Osmio", "Oganesón"],
-        "correct": 0,
-        "selected": "undefined"
+        "answers": [
+            "Oxígeno",
+            "Oro",
+            "Osmio",
+            "Oganesón"
+        ],
+        "correct": 0
     },
     {
         "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
-        "answers": ["1914", "1939", "1945", "1963"],
-        "correct": 1,
-        "selected": "undefined"
+        "answers": [
+            "1914",
+            "1939",
+            "1945",
+            "1963"
+        ],
+        "correct": 1
     },
     {
         "question": "¿Quién escribió 'Cien años de soledad'?",
-        "answers": ["Pablo Neruda", "Mario Vargas Llosa", "Gabriel García Márquez", "Julio Cortázar"],
-        "correct": 2,
-        "selected": "undefined"
+        "answers": [
+            "Pablo Neruda",
+            "Mario Vargas Llosa",
+            "Gabriel García Márquez",
+            "Julio Cortázar"
+        ],
+        "correct": 2
     },
     {
         "question": "¿Cuál es el planeta más grande del sistema solar?",
-        "answers": ["Tierra", "Marte", "Júpiter", "Saturno"],
-        "correct": 2,
-        "selected": "undefined"
+        "answers": [
+            "Tierra",
+            "Marte",
+            "Júpiter",
+            "Saturno"
+        ],
+        "correct": 2
     },
     {
         "question": "¿Qué país ganó la Copa Mundial de la FIFA en 2018?",
-        "answers": ["Alemania", "Brasil", "Francia", "Argentina"],
-        "correct": 2,
-        "selected": "undefined"
+        "answers": [
+            "Alemania",
+            "Brasil",
+            "Francia",
+            "Argentina"
+        ],
+        "correct": 2
     },
     {
         "question": "¿Cuál es el idioma oficial de Brasil?",
-        "answers": ["Español", "Portugués", "Inglés", "Francés"],
-        "correct": 1,
-        "selected": "undefined"
+        "answers": [
+            "Español",
+            "Portugués",
+            "Inglés",
+            "Francés"
+        ],
+        "correct": 1
     },
     {
         "question": "¿En qué continente se encuentra Egipto?",
-        "answers": ["Asia", "África", "Europa", "América del Sur"],
-        "correct": 1,
-        "selected": "undefined"
+        "answers": [
+            "Asia",
+            "África",
+            "Europa",
+            "América del Sur"
+        ],
+        "correct": 1
     },
     {
         "question": "¿Cuál es la moneda oficial de Japón?",
-        "answers": ["Yen", "Won", "Dólar", "Euro"],
-        "correct": 0,
-        "selected": "undefined"
+        "answers": [
+            "Yen",
+            "Won",
+            "Dólar",
+            "Euro"
+        ],
+        "correct": 0
     },
     {
         "question": "¿Cuál es el río más largo del mundo?",
-        "answers": ["Amazonas", "Nilo", "Yangtsé", "Misisipi"],
-        "correct": 1,
-        "selected": "undefined"
+        "answers": [
+            "Amazonas",
+            "Nilo",
+            "Yangtsé",
+            "Misisipi"
+        ],
+        "correct": 1
     }
 ]
