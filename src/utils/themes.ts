@@ -26,10 +26,12 @@ const myNewTheme: BrandVariants = {
 
 const lightTheme: Theme = {
   ...createLightTheme(myNewTheme),
+  colorNeutralForegroundDisabled: '#424242'
 }
 
 const darkTheme: Theme = {
   ...createDarkTheme(myNewTheme),
+  colorNeutralForegroundDisabled: '#d6d6d6'
 }
 
 darkTheme.colorBrandForeground1 = myNewTheme[110]
