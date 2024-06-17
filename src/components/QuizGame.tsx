@@ -3,6 +3,7 @@ import {
   MenuItem,
   MenuList,
   Subtitle2,
+  Tooltip,
   tokens,
 } from '@fluentui/react-components'
 import { ArrowLeft32Regular, ArrowRight32Regular } from '@fluentui/react-icons'
@@ -39,6 +40,7 @@ export default function QuizGame() {
     <>
     <div id='quiz-game' className={darkMode ? 'dark' : ''}>
       <div id='controls'>
+      <Tooltip positioning='before' withArrow content="Anterior" relationship="label">
         <Button
           disabled={currentQuestion <= 0}
           appearance='outline'
@@ -46,7 +48,9 @@ export default function QuizGame() {
           icon={<ArrowLeft32Regular />}
           onClick={prevQuestion}
         />
+        </Tooltip>
         <Subtitle2>{`${currentQuestion + 1} / ${questions.length}`}</Subtitle2>
+        <Tooltip positioning='after' withArrow content="Siguiente" relationship="label">
         <Button
           disabled={currentQuestion + 1 >= questions.length}
           appearance='outline'
@@ -54,6 +58,7 @@ export default function QuizGame() {
           icon={<ArrowRight32Regular />}
           onClick={nextQuestion}
         />
+        </Tooltip>
       </div>
       <div
         id='question'
