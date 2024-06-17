@@ -1,13 +1,17 @@
 import './App.css'
 import { Button, FluentProvider, Title1 } from '@fluentui/react-components'
-import QuizGame from './QuizGame'
+import QuizGame from './components/QuizGame'
 import useDarkMode from './store/useDarkMode'
 import { getTheme } from './utils/themes'
+import useQuestions from './store/useQuestions'
 
 function App() {
 
   const darkMode = useDarkMode((state)=>state.darkMode)
   const changeDarkMode = useDarkMode((state)=>state.changeDarkMode)
+
+  const questions = useQuestions(state=>state.questions)
+  const getQuestions = useQuestions(state=>state.getQuestions)
 
   const theme = getTheme(darkMode)
 
@@ -23,7 +27,9 @@ function App() {
             icon={<>{darkMode?' 🌞 ':' 🌝 '}</>}
           ></Button>
         </nav>
-        <QuizGame/>
+        <main>
+        {questions.length==0?<Button onClick={()=>getQuestions()} appearance='primary' size='large' style={{marginTop: -140}}>Comenzar</Button>:<QuizGame/>}
+        </main>
       </div>
     </FluentProvider>
   )
